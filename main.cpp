@@ -2,53 +2,38 @@
 using namespace std;
 
 int main()
-{ 
-
-	int first_num;
-	int two_num;
-	string x1 = "/";
-	string x2 = "*";
-	string x3 = "+";
-	string x4 = "-";
-	string x12 = "";
-  
-	cout << "Hello, choose what you need '/' '*' '+' '-' : ";
-	cin >> x12;
-	if (x1 == x12)
+{
+	setlocale(LC_ALL, "");
+	string name;
+	int a, b, select;
+	cout << "What is your name: ";
+	cin >> name;
+	cout << "Input here two number: ";
+	cin >> a >> b;
+	cout << "Welcome " << name << " \n\tChoose an option: \n\t1. Multiplication(*)\n\t2. Division(/)\n\t3. Amount(+)\n\t4. Taking away(-) !\n";
+	cin >> select;
+	switch (select)
 	{
-		cout << "Hello you have chosen: '/' \n";
-		cout << "The meaning of the first number: ";
-		cin >> first_num;
-		cout << "The meaning of the second number: ";
-		cin >> two_num;
-		cout << "Counting... " << first_num / two_num << " ! This is the answer";
-	}
-	else if (x2 == x12)
+	case 1: 
 	{
-		cout << "Hello you have chosen: '*' ";
-		cout << "The meaning of the first number: ";
-		cin >> first_num;
-		cout << "The meaning of the second number: ";
-		cin >> two_num;
-		cout << "Counting... " << first_num * two_num << " ! This is the answer";
+		cout << a * b << " -Result!\n";
+		break;
 	}
-	else if (x3 == x12)
+	case 2:
 	{
-		cout << "Hello you have chosen: '+' ";
-		cout << "The meaning of the first number: ";
-		cin >> first_num;
-		cout << "The meaning of the second number: ";
-		cin >> two_num;
-		cout << "Counting... " << first_num + two_num << " ! This is the answer";
+		cout << a / b << " -Result!\n";
+		break;
 	}
-	else if (x4 == x12)
+	case 3:
 	{
-		cout << "Hello you have chosen: '-' ";
-		cout << "The meaning of the first number: ";
-		cin >> first_num;
-		cout << "The meaning of the second number: ";
-		cin >> two_num;
-		cout << "Counting... " << first_num + two_num << " ! This is the answer";
+		cout << a + b << " -Result!\n";
+		break;
 	}
-
+	case 4:
+	{
+		cout << a - b << " -Result!\n";
+		break;
+	}
+	}
+	return 0;
 }
