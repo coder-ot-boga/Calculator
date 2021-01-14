@@ -3,37 +3,53 @@ using namespace std;
 
 int main()
 {
-	setlocale(LC_ALL, "");
-	string name;
-	int a, b, select;
-	cout << "What is your name: ";
-	cin >> name;
-	cout << "Input here two number: ";
-	cin >> a >> b;
-	cout << "Welcome " << name << " \n\tChoose an option: \n\t1. Multiplication(*)\n\t2. Division(/)\n\t3. Amount(+)\n\t4. Taking away(-) !\n";
-	cin >> select;
-	switch (select)
-	{
-	case 1: 
-	{
-		cout << a * b << " -Result!\n";
-		break;
-	}
-	case 2:
-	{
-		cout << a / b << " -Result!\n";
-		break;
-	}
-	case 3:
-	{
-		cout << a + b << " -Result!\n";
-		break;
-	}
-	case 4:
-	{
-		cout << a - b << " -Result!\n";
-		break;
-	}
-	}
-	return 0;
+  int a = 0, x = 0, y = 0, c;
+  setlocale(LC_ALL, "rus");
+  do {
+    setlocale(LC_ALL, "rus");
+    cout << "\t\n1. Умножение 2. Деление 3. Отрицание 4. Сумма ";
+    cin >> a;
+    switch (a)
+    {
+    case 1: {
+      cout << "Введите значение первого числа: \n";
+      cin >> x;
+      cout << "Введите значение второго числа: \n";
+      cin >> y;
+      cout << "Ответ = " << x * y << " !\n";
+      break;
+    }
+    case 2:
+    {
+      cout << "Введите значение первого числа: \n";
+      cin >> x;
+      cout << "Введите значение второго числа: \n";
+      cin >> y;
+      cout << "Ответ = " << x / y << " !\n";
+      break;
+    }
+    case 3:
+    {
+      cout << "Введите значение первого числа: \n";
+      cin >> x;
+      cout << "Введите значение второго числа: \n";
+      cin >> y;
+      cout << "Ответ = " << x - y << " !\n";
+      break;
+    }
+    case 4:
+    {
+      cout << "Введите значение первого числа: \n";
+      cin >> x;
+      cout << "Введите значение второго числа: \n";
+      cin >> y;
+      cout << "Ответ = " << x + y << " !\n";
+      break;
+    }
+
+    }
+    cout << "Нужно продолжить? \nНажмите 1 и повторите свои расчеты\nНажмите 2 для выхода из программы:\n ";
+    cin >> c;
+  } while (c == 1);
+  return 0;
 }
