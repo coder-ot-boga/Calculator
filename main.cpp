@@ -6,49 +6,48 @@ int main()
   int a = 0, x = 0, y = 0, c;
   setlocale(LC_ALL, "rus");
   do {
-    setlocale(LC_ALL, "rus");
-    cout << "\t\n1. Умножение 2. Деление 3. Отрицание 4. Сумма ";
+    cout << "\t\n1. Multiplication 2. Division 3. Taking away 4. Amount ";
     cin >> a;
     switch (a)
     {
     case 1: {
-      cout << "Введите значение первого числа: \n";
+      cout << "Enter the value of the first number: \n";
       cin >> x;
-      cout << "Введите значение второго числа: \n";
+      cout << "Enter the value of the second number: \n";
       cin >> y;
       cout << "Ответ = " << x * y << " !\n";
       break;
     }
     case 2:
     {
-      cout << "Введите значение первого числа: \n";
+      cout << "Enter the value of the first number: \n";
       cin >> x;
-      cout << "Введите значение второго числа: \n";
+      cout << "Enter the value of the second number: \n";
       cin >> y;
       cout << "Ответ = " << x / y << " !\n";
       break;
     }
     case 3:
     {
-      cout << "Введите значение первого числа: \n";
+      cout << "Enter the value of the first number: \n";
       cin >> x;
-      cout << "Введите значение второго числа: \n";
+      cout << "Enter the value of the second number: \n";
       cin >> y;
       cout << "Ответ = " << x - y << " !\n";
       break;
     }
     case 4:
     {
-      cout << "Введите значение первого числа: \n";
+      cout << "Enter the value of the first number: \n";
       cin >> x;
-      cout << "Введите значение второго числа: \n";
+      cout << "Enter the value of the second number: \n";
       cin >> y;
       cout << "Ответ = " << x + y << " !\n";
       break;
     }
 
     }
-    cout << "Нужно продолжить? \nНажмите 1 и повторите свои расчеты\nНажмите 2 для выхода из программы:\n ";
+    cout << "Need to continue? \ n Press 1 and repeat your calculations \ n Press 2 to exit the program:\n ";
     cin >> c;
   } while (c == 1);
   return 0;
