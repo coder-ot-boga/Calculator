@@ -9,7 +9,8 @@ int main()
         cin >> a;
         switch (a)
         {
-        case 1: {
+        case 1: 
+        {
             cout << "Enter the value of the first number: \n";
             cin >> x;
             cout << "Enter the value of the second number: \n";
